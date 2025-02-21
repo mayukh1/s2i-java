@@ -1,0 +1,10 @@
+#!/bin/sh
+# Assemble script for building the Java application in S2I
+
+echo "Building the application..."
+mvn clean package -DskipTests
+
+mkdir -p /deployments
+
+# Copy the built JAR to the deployment directory
+cp target/*.jar /deployments/appdemo.jar
