@@ -20,6 +20,6 @@ public class DemoApplication {
 class HelloController {
     @GetMapping("/hello")
     public String sayHello() {
-        return "Hello from s390x! with docker build strategy";
+        return "Hello from s390x!!!!";
     }
 }
